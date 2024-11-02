@@ -5,11 +5,11 @@
  npm install @mui/material @emotion/react @emotion/styled @mui/icons-material react-router-dom zustand
  ```
 
-### React Google Charts
+## Gráficos
 Testei com dois estilos de gráficos
-## Google
+### Google
 `npm install --save react-google-charts`
-## MUI Charts
+### MUI Charts
 `npm install @mui/x-charts`
 
 ## Available Scripts
