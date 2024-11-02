@@ -8,13 +8,15 @@
 ## Gráficos
 Testei com dois estilos de gráficos
 ### Google
+[React Google Charts](https://www.react-google-charts.com/examples/)
 `npm install --save react-google-charts`
 ### MUI Charts
+[MUI X Charts](https://mui.com/x/react-charts/)
 `npm install @mui/x-charts`
 
-## Available Scripts
+Você não precisa instalar nenhum dos comandos acima, os anotei apenas para fins didáticos.
 
-Você não precisa instalar nada dos comandos acima, os anotei em cada passo apenas para fins didáticos.
+## Instalação
 
 ### `npm i`
 ### `npm start`
