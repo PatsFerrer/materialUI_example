@@ -7,6 +7,8 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccordionDash from '../components/AccordionDash';
+import BarChart from '../charts/BarChart';
+import BarChartMui from '../charts/BarChartMui';
 
 export default function Home() {
   return (
@@ -150,7 +152,8 @@ export default function Home() {
               <Grid size={8}>
                 <Card sx={{ height: 60 + "vh" }}>
                   <CardContent>
-
+                    <BarChart />
+                    {/* <BarChartMui/> */}
                   </CardContent>
                 </Card>
               </Grid>
