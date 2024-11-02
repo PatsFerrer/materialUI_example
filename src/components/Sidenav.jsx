@@ -15,6 +15,10 @@ import { styled, useTheme } from '@mui/material/styles';
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '../appStore';
+import SettingsIcon from '@mui/icons-material/Settings';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
+import HomeIcon from '@mui/icons-material/Home';
 
 const drawerWidth = 240;
 
@@ -80,11 +84,10 @@ export default function Sidenav() {
   const navigate = useNavigate();
   const open = useAppStore((state) => state.dopen)
 
-
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <Box height={30}/>
+      <Box height={30} />
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton>
@@ -93,7 +96,7 @@ export default function Sidenav() {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => {navigate("/")}}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate("/") }}>
             <ListItemButton
               sx={{ minHeight: 48, justifyContent: open ? 'initial' : 'center', px: 2.5 }}
             >
@@ -104,13 +107,13 @@ export default function Sidenav() {
                   justifyContent: 'center',
                 }}
               >
-                <InboxIcon />
+                <HomeIcon />
               </ListItemIcon>
               <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => {navigate("/about")}}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate("/products") }}>
             <ListItemButton
               sx={{ minHeight: 48, justifyContent: open ? 'initial' : 'center', px: 2.5 }}
             >
@@ -121,13 +124,13 @@ export default function Sidenav() {
                   justifyContent: 'center',
                 }}
               >
-                <InboxIcon />
+                <ShoppingCartIcon />
               </ListItemIcon>
-              <ListItemText primary="About" sx={{ opacity: open ? 1 : 0 }} />
+              <ListItemText primary="Products" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => {navigate("/settings")}}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate("/analytics") }}>
             <ListItemButton
               sx={{ minHeight: 48, justifyContent: open ? 'initial' : 'center', px: 2.5 }}
             >
@@ -138,17 +141,34 @@ export default function Sidenav() {
                   justifyContent: 'center',
                 }}
               >
-                <InboxIcon />
+
+                <AnalyticsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Analytics" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate("/settings") }}>
+            <ListItemButton
+              sx={{ minHeight: 48, justifyContent: open ? 'initial' : 'center', px: 2.5 }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : 'auto',
+                  justifyContent: 'center',
+                }}
+              >
+                <SettingsIcon />
               </ListItemIcon>
               <ListItemText primary="Settings" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
 
-
         </List>
 
       </Drawer>
-      
+
     </Box>
   );
 }
