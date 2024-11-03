@@ -6,6 +6,7 @@ import Sidenav from './../components/Sidenav';
 import GeoChart from '../charts/GeoChart';
 import PieChart from '../charts/PieChart';
 import HBarChart from '../charts/HBarChart';
+import CountUp from 'react-countup';
 
 export default function Analytics() {
   return (
@@ -48,7 +49,8 @@ export default function Analytics() {
                         component="div"
                         sx={{ color: '#FFF' }}
                       >
-                        24,630
+                        {/* 24,630 */}
+                        <CountUp delay={0.2} end={22000} duration={0.3} />
                       </Typography>
                       <Typography
                         gutterBottom
@@ -82,7 +84,7 @@ export default function Analytics() {
                         component="div"
                         sx={{ color: '#FFF' }}
                       >
-                        24,630
+                        <CountUp delay={0.4} end={32000} duration={0.6} />
                       </Typography>
                       <Typography
                         gutterBottom
@@ -120,7 +122,7 @@ export default function Analytics() {
                         component="div"
                         sx={{ color: '#FFF' }}
                       >
-                        24,630
+                        <CountUp delay={0.4} end={12000} duration={0.6} />
                       </Typography>
                       <Typography
                         gutterBottom
@@ -154,7 +156,7 @@ export default function Analytics() {
                         component="div"
                         sx={{ color: '#FFF' }}
                       >
-                        24,630
+                        <CountUp delay={0.4} end={22500} duration={0.6} />
                       </Typography>
                       <Typography
                         gutterBottom
@@ -178,7 +180,7 @@ export default function Analytics() {
                     // maxWidth: 345
                   }}
                 >
-                  <HBarChart/>
+                  <HBarChart />
                 </Card>
                 {/* </Stack> */}
 

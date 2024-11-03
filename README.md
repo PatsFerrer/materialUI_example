@@ -15,6 +15,10 @@ Testei com dois estilos de gráficos:
 [MUI X Charts docs](https://mui.com/x/react-charts/)
 `npm install @mui/x-charts`
 
+## React CountUp
+[React CountUp](https://www.npmjs.com/package/react-countup)
+`npm i react-countup`
+
 Você não precisa instalar nenhum dos comandos acima, os anotei apenas para fins didáticos.
 
 ## Instalação

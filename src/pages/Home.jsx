@@ -9,6 +9,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccordionDash from '../components/AccordionDash';
 import BarChart from '../charts/BarChart';
 import BarChartMui from '../charts/BarChartMui';
+import CountUp from 'react-countup';
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
                   <Card
                     sx={{
                       minWidth: 49 + "%",
-                      height: 150,
+                      // height: 150,
                       background: 'linear-gradient(158deg, rgba(40,34,70,1) 0%, rgba(30,40,141,1) 100%)',
                     }}
                   >
@@ -43,7 +44,7 @@ export default function Home() {
                         component="div"
                         sx={{ color: '#FFF' }}
                       >
-                        $500.00
+                        $<CountUp delay={0.2} end={500} duration={0.3} />
                       </Typography>
                       <Typography
                         gutterBottom
@@ -70,7 +71,7 @@ export default function Home() {
                         component="div"
                         sx={{ color: '#FFF' }}
                       >
-                        $900.00
+                        $<CountUp delay={0.2} end={900} duration={0.3} />
                       </Typography>
                       <Typography
                         gutterBottom
@@ -84,11 +85,11 @@ export default function Home() {
                   </Card>
                 </Stack>
               </Grid>
-              <Grid size={4}>
+              <Grid size={4} >
                 <Stack spacing={2}>
                   <Card
                     sx={{
-                      maxWidth: 345,
+                      // maxWidth: 345,
                       background: 'linear-gradient(158deg, rgba(53, 138, 148, 1) 0%, rgba(91, 180, 96, 1) 100%)',
                     }}
                   >
@@ -125,7 +126,7 @@ export default function Home() {
                   </Card>
                   <Card
                     sx={{
-                      maxWidth: 345
+                      // maxWidth: 345
                     }}
                   >
                     {/* <CardContent> */}
